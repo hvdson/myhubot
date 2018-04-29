@@ -19,14 +19,14 @@ module.exports = (robot) ->
   # robot.hear /:fire::fire::fire::fire::fire::fire:/, (res) ->
   #   res.send "It dat boi"
 
-  robot.hear /(.*)/, (res) ->
-    num = Math.random(0,10)
-    console.log num
-    if num < 4?
-      res.send res.random enterReplies
+  # robot.hear /(.*)/, (res) ->
+  #   num = Math.random(0,10)
+  #   console.log num
+  #   if num < 4?
+  #     res.send res.random enterReplies
     
-  enterReplies = ['Hey bro you want some kombucha? 🙆']
-  leaveReplies = ['I\'ll see you at costco next friday :\'(']
+  # enterReplies = ['Hey bro you want some kombucha? 🙆']
+  # leaveReplies = ['I\'ll see you at costco next friday :\'(']
   
   robot.enter (res) ->
     res.send res.random enterReplies
